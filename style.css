@@ -1,15 +1,9 @@
-.text-blue {
-  color: #0000ff;
+.project-img {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 1s;
 }
 
-.tex1 {
-  margin-left: 20px;
-}
-
-.tex2 {
-  margin-left: 50px;
-}
-
-.tex3 {
-  margin-left: 80px;
+.project-img:hover {
+  transform: scale(1.2);
 }
