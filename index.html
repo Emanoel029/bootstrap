@@ -10,7 +10,63 @@
 </head>
 
 <body>
-
+  <!-- Modal -->
+  <div class="modal fade" id="orcamentoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitar orçamento</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-12">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Instagram</label>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Instagram" aria-label="Instagram" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Ramo do seu negócio</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Planos de interesse</label>
+              <select class="form-select" required>
+                <option selected disabled>Escolha o plano...</option>
+                <option>Plano platium</option>
+                <option>Plano gold</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Qual o porte da sua empresa</label>
+              <select class="form-select" required>
+                <option selected disabled>Porte da empresa...</option>
+                <option>Pequena empresa</option>
+                <option>Media empresa</option>
+                <option>Grande empresa</option>
+                <option>Multinacional</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
   <header>
     <nav class="navbar navbar-expand-lg bg-dark py-4" data-bs-theme="dark">
       <div class="container">
@@ -46,7 +102,7 @@
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary " href="#">Contato</a>
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orcamentoModal" Launch demo modal href="#">Solicitar orçamento</a>
             </li>
           </ul>
         </div>
@@ -58,7 +114,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center">
-          <h1 class="fw-bold">A melhor solução para a sua empresa</h1>
+          <h1 class="fw-bold mt-3">A melhor solução para a sua empresa</h1>
           <p>Nosso time desenvolverá a solução que você precisa para fazer o seu negócio evoluir</p>
           <button type="button" class="btn btn-primary">Conheça mais</button>
         </div>
